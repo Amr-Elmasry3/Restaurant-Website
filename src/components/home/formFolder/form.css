@@ -66,6 +66,7 @@
     font-size: 13px;
     font-family: var(--first-font);
     color: var(--title-color);
+    background-color: transparent;
 }
 .form .box input::placeholder {
     font-size: 13px;
@@ -79,6 +80,7 @@
     font-family: var(--first-font);
     font-size: 13px;
     color: var(--title-color);
+    background-color: transparent;
 }
 .form .main-button {
     width: fit-content;

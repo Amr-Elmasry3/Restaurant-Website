@@ -42,19 +42,6 @@ export default function Headr() {
     } else {
       setHeadrBackground(false);
     }
-
-    // Handle Links Headr
-    if (window.scrollY < 1100) {
-      handleActiveLink(1);
-    } else if (window.scrollY >= 1100 && window.scrollY < 1800) {
-      handleActiveLink(2);
-    } else if (window.scrollY >= 1800 && window.scrollY < 2800) {
-      handleActiveLink(3);
-    } else if (window.scrollY >= 2800 && window.scrollY < 3600) {
-      handleActiveLink(4);
-    } else if (window.scrollY >= 3600) {
-      handleActiveLink(5);
-    }
   };
 
   const linksList = linksData.map((link) => {
