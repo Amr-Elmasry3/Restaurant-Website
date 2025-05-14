@@ -1,0 +1,86 @@
+.form {
+    position: relative;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white-color);
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    border-top: 3px solid var(--first-color);
+    border-bottom: 3px solid var(--first-color);
+    box-shadow: 0 0 10px #12121299;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(25% - 7px), 1fr));
+    align-items: center;
+    gap: 15px 7px;
+}
+@media (max-width: 1029px) {
+    .form {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        width: 70%;
+    }
+}
+@media (max-width: 767px) {
+    .form {
+        transform: translate(-50%, -25%);
+        -webkit-transform: translate(-50%, -25%);
+        -moz-transform: translate(-50%, -25%);
+        -ms-transform: translate(-50%, -25%);
+        -o-transform: translate(-50%, -25%);
+}
+}
+@media (max-width: 590px) {
+    .form {
+        transform: translate(-50%, -10%);
+        -webkit-transform: translate(-50%, -10%);
+        -moz-transform: translate(-50%, -10%);
+        -ms-transform: translate(-50%, -10%);
+        -o-transform: translate(-50%, -10%);
+        width: 90%;
+}
+}
+@media (max-width: 490px) {
+    .form {
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+.form .title {
+    color: var(--title-color);
+}
+.form .box {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border: 1px solid hsl(271deg 4% 38% / 45%);
+    border-radius: 15px;
+    padding: 6px;
+}
+.form .box .icon {
+    font-size: 20px;
+    color: var(--first-color);
+}
+.form .box input {
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    font-family: var(--first-font);
+    color: var(--title-color);
+}
+.form .box input::placeholder {
+    font-size: 13px;
+    color: var(--text-color);
+}
+.form .box select {
+    width: 100%;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: var(--first-font);
+    font-size: 13px;
+    color: var(--title-color);
+}
+.form .main-button {
+    width: fit-content;
+    justify-self: end;
+}

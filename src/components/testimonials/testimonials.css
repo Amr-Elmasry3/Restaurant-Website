@@ -1,0 +1,84 @@
+.testimonials {
+    padding: 60px 0;
+} 
+.testimonials .container .main-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.testimonials .container .main-heading .description {
+    max-width: 325px;
+}
+.testimonials .container .silder .mySwiper {
+    margin: 35px 0 0;
+}
+.testimonials .container .silder .mySwiper .swiper-pagination {
+    position: relative;
+    margin: 25px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonials .container .silder .mySwiper .swiper-pagination span {
+    background-color: var(--first-color);
+    opacity: 1;
+}
+.testimonials .container .silder .mySwiper .swiper-pagination span.swiper-pagination-bullet-active {
+    width: 17px;
+    height: 5px;
+    border-radius: 7px;
+}
+.testimonials .container .silder .mySwiper .swiper-slide {
+    position: relative;
+    background-color: var(--box-color);
+    padding: 0 25px 25px;
+    border-top: 12px solid var(--white-color);
+    border-left: 12px solid var(--white-color);
+}
+.testimonials .container .silder .mySwiper .swiper-slide::after {
+    content: "";
+    position: absolute;
+    /* 10px => Refers To width of border-top And border-left of .swiper-slide */
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    top: -10px;
+    left: -10px;
+    border-top: 2px solid var(--box-color);
+    border-left: 2px solid var(--box-color);
+    z-index: -1;
+}
+.testimonials .container .silder .mySwiper .swiper-slide .info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.testimonials .container .silder .mySwiper .swiper-slide .info .picture {
+    width: 75px;
+    height: 70px;
+    border: 7px solid var(--white-color);
+}
+.testimonials .container .silder .mySwiper .swiper-slide .info .picture img {
+    width: 100%;
+    height: 100%;
+}
+.testimonials .container .silder .mySwiper .swiper-slide .info .name span {
+    display: block;
+}
+.testimonials .container .silder .mySwiper .swiper-slide .info .name span:first-of-type {
+    color: var(--title-color);
+}
+.testimonials .container .silder .mySwiper .swiper-slide .info .name span:last-of-type {
+    font-size: 15px;
+    color: var(--first-color);
+}
+.testimonials .container .silder .mySwiper .swiper-slide .description {
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 15px 0 0;
+}
+.testimonials .container .silder .mySwiper .swiper-slide .rate {
+    width: fit-content;
+    margin: 10px 0 0;
+} 

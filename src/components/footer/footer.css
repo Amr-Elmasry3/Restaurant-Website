@@ -1,0 +1,218 @@
+.footer {
+    background-color: hsl(var(--hue), 0%, 10%);
+    padding: 60px 0 20px;
+}
+.footer .container .part-one {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px 25px;
+}
+.footer .container .part-one .restou img {
+    width: 155px;
+}
+.footer .container .part-one .restou .description {
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    word-spacing: 1.2px;
+    margin: 15px 0;
+}
+.footer .container .part-one .restou .newsletter span {
+    font-size: 14px;
+    color: var(--first-color);
+}
+.footer .container .part-one .restou .newsletter .subscribe {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background-color: var(--white-color);
+    margin: 13px 0 0;
+    padding: 2px 0 2px 8px;
+    border-radius: 30px;
+    height: 38px;
+}
+.footer .container .part-one .restou .newsletter .subscribe .icon {
+    font-size: 20px;
+    color: var(--first-color);
+}
+.footer .container .part-one .restou .newsletter .subscribe input {
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    height: 100%;
+    font-family: var(--first-font);
+    font-size: 14px;
+    color: var(--title-color);
+}
+.footer .container .part-one .restou .newsletter .subscribe input::placeholder {
+    font-size: 14px;
+    color: var(--title-color);
+}
+.footer .container .part-one .restou .newsletter .subscribe button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--first-color);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--first-font);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: var(--transition-duration);
+    -webkit-transition: var(--transition-duration);
+    -moz-transition: var(--transition-duration);
+    -ms-transition: var(--transition-duration);
+    -o-transition: var(--transition-duration);
+}
+.footer .container .part-one .restou .newsletter .subscribe button:hover {
+    background-color: var(--second-color);
+}
+.footer .container .part-one .restou .newsletter .subscribe button .icon {
+    font-size: 14px;
+    color: var(--white-color);
+}
+.footer .container .part-one .same-title-style .title {
+    width: fit-content;
+    position: relative;
+    font-weight: 500;
+    color: var(--white-color);
+    margin: 0 0 30px;
+}
+.footer .container .part-one .same-title-style > .title::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: var(--first-color);
+    left: 0;
+    bottom: -7px;
+    border-radius: 5px;
+}
+@media (min-width: 600px) {
+    .footer .container .part-one .quick-links {
+        justify-self: center;
+    }
+}
+.footer .container .part-one .quick-links .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer .container .part-one .quick-links .content a {
+    font-size: 15px;
+    color: var(--white-color);
+    transition: var(--transition-duration);
+    -webkit-transition: var(--transition-duration);
+    -moz-transition: var(--transition-duration);
+    -ms-transition: var(--transition-duration);
+    -o-transition: var(--transition-duration);
+}
+.footer .container .part-one .quick-links .content a:hover {
+    color: var(--first-color);
+}
+.footer .container .part-one .opening-hours .content {
+    background-color: var(--container-color);
+    padding: 10px;
+    box-shadow: 0 0 10px #12121252;
+}
+.footer .container .part-one .opening-hours .content .box {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    border-bottom: 2px dotted var(--white-color);
+}
+.footer .container .part-one .opening-hours .content .box span {
+    font-size: 14px;
+    color: var(--body-color);
+}
+.footer .container .part-one .opening-hours .content .box:last-of-type span:last-of-type {
+    color: var(--first-color);
+}
+.footer .container .part-one .get-in-touch .content .box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+.footer .container .part-one .get-in-touch .content .box .box-icon {
+        background-color: var(--first-color);
+    width: 30px;
+    height: 30px !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .container .part-one .get-in-touch .content .box .box-icon .icon {
+    font-size: 20px;
+    color: var(--white-color);
+}
+.footer .container .part-one .get-in-touch .content .box .details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer .container .part-one .get-in-touch .content .box .details .title {
+    margin: 0;
+    color: var(--first-color);
+}
+.footer .container .part-one .get-in-touch .content .box .details .info {
+    font-size: 14px;
+    color: var(--white-color);
+}
+.footer .container .part-two { 
+    margin: 45px 0 0;
+    padding: 12px 0 0;
+    border-top: 1.5px dashed hsl(0deg 0% 100% / 58%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.footer .container .part-two .copyright {
+    font-size: 13px;
+    color: var(--white-color);
+}
+.footer .container .part-two .copyright span {
+    color: var(--first-color);
+}
+.footer .container .part-two .social-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.footer .container .part-two .social-links a {
+    background-color: var(--white-color);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-duration);
+    -webkit-transition: var(--transition-duration);
+    -moz-transition: var(--transition-duration);
+    -ms-transition: var(--transition-duration);
+    -o-transition: var(--transition-duration);
+}
+.footer .container .part-two .social-links a:hover {
+    background-color: var(--first-color);
+}
+.footer .container .part-two .social-links a:hover > .icon {
+    color: var(--white-color);
+}
+.footer .container .part-two .social-links a .icon {
+    font-size: 18px;
+    color: var(--first-color);
+    transition: var(--transition-duration);
+    -webkit-transition: var(--transition-duration);
+    -moz-transition: var(--transition-duration);
+    -ms-transition: var(--transition-duration);
+    -o-transition: var(--transition-duration);
+}

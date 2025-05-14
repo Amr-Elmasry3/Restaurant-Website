@@ -1,38 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Righteous&display=swap');
+
+:root {
+  --hue: 271;
+  --first-color: hsl(37, 89%, 64%);
+  --second-color: hsl(14, 100%, 58%);
+  --box-color: hsla(37, 89%, 64%, 0.25);
+  --title-color: hsl(var(--hue), 4%, 26%);
+  --text-color: hsl(var(--hue), 4%, 38%);
+  --body-color: hsl(var(--hue), 4%, 99%);
+  --container-color: hsl(var(--hue), 4%, 26%);
+  --border-color: hsl(var(--hue), 4%, 91%);
+  --white-color: hsl(var(--hue), 4%, 100%);
+
+  --first-font: "Righteous", sans-serif;
+  --second-font: "Fleur De Leah", cursive;
+
+  --transition-duration: 0.4s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--first-font);
+  background-color: var(--body-color);
+}
+
+input,textarea {
+  outline: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.container {
+  margin: 0 120px;
+}
+@media (max-width: 1029px) {
+  .container {
+    margin: 0 90px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    margin: 0 70px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    margin: 0 15px;
+  }
+}
+
+.main-heading .title {
+    position: relative;
+    width: fit-content;
+    font-family: var(--second-font);
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--first-color);
+    margin: 0 0 15px;
+}
+.main-heading .title::before,
+.main-heading .title::after {
+    content: "";
+    position: absolute;
+    background-color: var(--first-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-heading .title::before {
+    width: 100px;
+    height: 3px;
+    bottom: -3px;
+}
+.main-heading .title::after {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    bottom: -7px;
+}
+.main-heading .description {
+    font-weight: 500;
+    color: var(--title-color);
+}
+.main-heading .description span {
+    color: var(--first-color);
+}
+
+.stars {
+    position: relative;
+}
+.stars div {
+    display: flex;
+    align-items: center;
+}
+.stars div:last-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.stars div .icon {
+    font-size: 17px;
+    color: var(--first-color);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  overflow: hidden;
 }
